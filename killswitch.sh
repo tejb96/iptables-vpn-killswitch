@@ -57,6 +57,8 @@ enable_killswitch() {
     # Disable IPv6 completely
     disable_ipv6
 
+    add_whitelisted_ips 
+    
     # Flush existing OUTPUT chain
     iptables -F OUTPUT 2>/dev/null
     iptables -Z OUTPUT 2>/dev/null
