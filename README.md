@@ -11,7 +11,7 @@
 - Root privileges (`sudo`) to modify network rules.
 
   ## Setup
-  1. Save the script killswitch.sh
+  1. Save the script `killswitch.sh`.
   2. Make it executable:
      ```bash
      chmod +x killswitch.sh
@@ -29,6 +29,10 @@
   ```bash
   sudo ./killswitch.sh disable
   ```
+
+
+  **Disclaimer:** Use this script at your own risk. It modifies firewall rules and disables IPv6, which may temporarily break network connectivity. The author is not responsible for any issues arising from its use.
+
 
 
      
