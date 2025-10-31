@@ -12,7 +12,7 @@ fi
 # Define the VPN interface
 VPN_INTERFACE="tun0"
 # Define the path to the whitelisted IPs file
-WHITELISTED_IPS="/whitelisted_ips.txt"
+WHITELISTED_IPS="whitelisted_ips.txt"
 
 # Create an ipset for whitelisted IPs
 ipset create vpn_whitelist hash:ip 2>/dev/null
